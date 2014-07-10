@@ -1,15 +1,15 @@
-WELCOME
+<b>WELCOME</b>
 --------------------------------------------------
 rails new rackspace_assignment
 
 
-RUNNING THE APP
+<b>RUNNING THE APP</b>
 --------------------------------------------------
 git clone 
 
 
 
-GEMFILE ADDITIONS
+<b>GEMFILE ADDITIONS</b>
 --------------------------------------------------
 gem 'therubyracer'
 
@@ -24,7 +24,7 @@ gem 'datetimepicker-rails', :require => 'datetimepicker-rails', :git => 'git://g
 ruby "2.1.1"
 
 
-3RD PARTY GENERATES
+<b>3RD PARTY GENERATES</b>
 --------------------------------------------------
 rails g bootstrap:install static
 
@@ -34,7 +34,7 @@ rails g datetimepicker_rails:install
 
 
 
-REFERRED URLS:
+<b>REFERRED URLS:</b>
 --------------------------------------------------
 https://github.com/seyhunak/twitter-bootstrap-rails
 
@@ -44,7 +44,7 @@ https://github.com/zpaulovics/datetimepicker-rails
 
 
 
-SCAFFOLDING
+<b>SCAFFOLDING</b>
 --------------------------------------------------
 rails g scaffold veterinary_doctor name address_line1 address_line2 city state zip school_name years_in_practice:integer
 
