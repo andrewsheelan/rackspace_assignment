@@ -11,6 +11,7 @@
 * bundle install
 
 * rails s
+(The development.sqlite file has been included with sample data)
 
 
 <b>GEMFILE ADDITIONS</b>
