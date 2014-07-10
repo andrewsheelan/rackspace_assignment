@@ -1,12 +1,16 @@
-<b>WELCOME</b>
+= WELCOME
 --------------------------------------------------
-rails new rackspace_assignment
 
 
 <b>RUNNING THE APP</b>
 --------------------------------------------------
-git clone 
+* git clone https://github.com/andrewsheelan/rackspace_assignment.git
 
+* cd rackspace_assignment
+
+* bundle install
+
+* rails s
 
 
 <b>GEMFILE ADDITIONS</b>
