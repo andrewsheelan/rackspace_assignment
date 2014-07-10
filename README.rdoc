@@ -1,48 +1,63 @@
 WELCOME
 --------------------------------------------------
 rails new rackspace_assignment
-
+<br/>
+<br/>
 
 RUNNING THE APP
 --------------------------------------------------
-
-
-
-
+git clone 
+<br/>
+<br/>
+<br/>
 
 GEMFILE ADDITIONS
 --------------------------------------------------
 gem 'therubyracer'
+<br/>
 gem 'less-rails' 
+<br/>
 gem 'twitter-bootstrap-rails'
+<br/>
 gem ‘simple_form’
+<br/>
 gem 'datetimepicker-rails', :require => 'datetimepicker-rails', :git => 'git://github.com/zpaulovics/datetimepicker-rails.git'
-
-ruby "2.1.1"
+<br/>
+<br/>
+ruby "2.1.1"<br/>
+<br/>
+<br/>
+<br/>
 
 
 3RD PARTY GENERATES
 --------------------------------------------------
 rails g bootstrap:install static
+<br/>
 rails g simple_form:install
+<br/>
 rails g datetimepicker_rails:install
-
-
+<br/>
+<br/>
+<br/>
 REFERRED URLS:
 --------------------------------------------------
 https://github.com/seyhunak/twitter-bootstrap-rails
+<br/>
 http://asciicasts.com/episodes/234-simple-form
+<br/>
 https://github.com/zpaulovics/datetimepicker-rails
-
-
+<br/>
+<br/>
+<br/>
 SCAFFOLDING
 --------------------------------------------------
-rails g scaffold veterinary_doctor name address_line1 address_line2 city state zip school_name years_in_practice:integer
+rails g scaffold veterinary_doctor name address_line1 address_line2 city state zip school_name years_in_practice:integer<br/>
+<br/>
+rails g scaffold appointment date_of_visit:datetime pet:references:index customer:references:index requires_reminder:boolean reason_for_visit<br/>
 
-rails g scaffold appointment date_of_visit:datetime pet:references:index customer:references:index requires_reminder:boolean reason_for_visit
+<br/>
+rails g scaffold pet name type_of_pet breed age:integer weight:integer date_of_last_visit:datetime  <br/>
+<br/>
 
-
-rails g scaffold pet name type_of_pet breed age:integer weight:integer date_of_last_visit:datetime  
-
-
-rails g scaffold customer name
+rails g scaffold customer name<br/>
