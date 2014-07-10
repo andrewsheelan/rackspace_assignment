@@ -1,0 +1,8 @@
+<h1>My Pet Schedule</h1>
+
+<%= simple_form_for :customer do |f| %>  
+  <%= f.select :customer, collection: @customers %>   
+<% end %>  
+
+<div class="customer-result"></div>
+<br>

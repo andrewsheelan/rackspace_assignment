@@ -1,0 +1,48 @@
+WELCOME
+--------------------------------------------------
+rails new rackspace_assignment
+
+
+RUNNING THE APP
+--------------------------------------------------
+
+
+
+
+
+GEMFILE ADDITIONS
+--------------------------------------------------
+gem 'therubyracer'
+gem 'less-rails' 
+gem 'twitter-bootstrap-rails'
+gem ‘simple_form’
+gem 'datetimepicker-rails', :require => 'datetimepicker-rails', :git => 'git://github.com/zpaulovics/datetimepicker-rails.git'
+
+ruby "2.1.1"
+
+
+3RD PARTY GENERATES
+--------------------------------------------------
+rails g bootstrap:install static
+rails g simple_form:install
+rails g datetimepicker_rails:install
+
+
+REFERRED URLS:
+--------------------------------------------------
+https://github.com/seyhunak/twitter-bootstrap-rails
+http://asciicasts.com/episodes/234-simple-form
+https://github.com/zpaulovics/datetimepicker-rails
+
+
+SCAFFOLDING
+--------------------------------------------------
+rails g scaffold veterinary_doctor name address_line1 address_line2 city state zip school_name years_in_practice:integer
+
+rails g scaffold appointment date_of_visit:datetime pet:references:index customer:references:index requires_reminder:boolean reason_for_visit
+
+
+rails g scaffold pet name type_of_pet breed age:integer weight:integer date_of_last_visit:datetime  
+
+
+rails g scaffold customer name

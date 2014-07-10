@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @veterinary_doctor.name %>
+</p>
+
+<p>
+  <strong>Address line1:</strong>
+  <%= @veterinary_doctor.address_line1 %>
+</p>
+
+<p>
+  <strong>Address line2:</strong>
+  <%= @veterinary_doctor.address_line2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @veterinary_doctor.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @veterinary_doctor.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @veterinary_doctor.zip %>
+</p>
+
+<p>
+  <strong>School name:</strong>
+  <%= @veterinary_doctor.school_name %>
+</p>
+
+<p>
+  <strong>Years in practice:</strong>
+  <%= @veterinary_doctor.years_in_practice %>
+</p>
+
+<%= link_to 'Edit', edit_veterinary_doctor_path(@veterinary_doctor) %> |
+<%= link_to 'Back', veterinary_doctors_path %>

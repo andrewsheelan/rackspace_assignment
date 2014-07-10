@@ -1,0 +1,19 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Pet's Name</th>
+      <th>Date of Next(future) Appointments</th>
+      <th>Reason for Visit</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% appointments.each do |appointment| %>
+      <tr>
+        <td><%= appointment.pet.name %></td>
+        <td><%= appointment.date_of_visit %></td>
+        <td><%= appointment.reason_for_visit %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,8 @@
+<%= simple_form_for @pet do |f| %>  
+  <%= f.input :name %>   
+  <%= f.input :type_of_pet, collection: %w[dog cat bird] %>   
+  <%= f.input :breed %>   
+  <%= f.input :weight %>   
+  <%= f.input :date_of_last_visit, as: :datetime_picker %>   
+  <%= f.button :submit, class: 'btn'  %>  
+<% end %>  

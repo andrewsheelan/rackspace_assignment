@@ -1,0 +1,41 @@
+<h1>Manage Veterinary Doctors</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address line1</th>
+      <th>Address line2</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>School name</th>
+      <th>Years in practice</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @veterinary_doctors.each do |veterinary_doctor| %>
+      <tr>
+        <td><%= veterinary_doctor.name %></td>
+        <td><%= veterinary_doctor.address_line1 %></td>
+        <td><%= veterinary_doctor.address_line2 %></td>
+        <td><%= veterinary_doctor.city %></td>
+        <td><%= veterinary_doctor.state %></td>
+        <td><%= veterinary_doctor.zip %></td>
+        <td><%= veterinary_doctor.school_name %></td>
+        <td><%= veterinary_doctor.years_in_practice %></td>
+        <td><%= link_to 'Show', veterinary_doctor %></td>
+        <td><%= link_to 'Edit', edit_veterinary_doctor_path(veterinary_doctor) %></td>
+        <td><%= link_to 'Destroy', veterinary_doctor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Veterinary doctor', new_veterinary_doctor_path %>

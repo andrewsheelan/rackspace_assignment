@@ -1,0 +1,9 @@
+<%= simple_form_for @appointment do |f| %>  
+  <%= f.input :date_of_visit, as: :datetime_picker %>   
+  <%= f.association :pet %>   
+  <%= f.association :customer %>   
+  <%= f.input :requires_reminder, as: :select %>   
+  <%= f.input :reason_for_visit %>  
+
+  <%= f.button :submit, class: 'btn' %>  
+<% end %>  
